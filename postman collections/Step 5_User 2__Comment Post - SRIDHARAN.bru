@@ -1,0 +1,20 @@
+meta {
+  name: Step 5_User 2__Comment Post - SRIDHARAN
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3000/api/posts/comment/676279f3e26d0aab22c43ad7
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzYxOGVkYjM5M2ZjYTIzODYyMjllNmUiLCJpYXQiOjE3MzQ1MDc0NTgsImV4cCI6MTczNDUxMTA1OH0.IGGba1pTdVe4dyAog3foT2K3Pdi6eaYH2snbPzPUQQg
+}
+
+body:json {
+  { "comment": "Nice post John Doe!" }
+}

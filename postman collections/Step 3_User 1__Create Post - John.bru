@@ -1,0 +1,22 @@
+meta {
+  name: Step 3_User 1__Create Post - John
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/api/posts
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: multipart/form-data
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzYxOGU1MzM5M2ZjYTIzODYyMjllNmIiLCJpYXQiOjE3MzQ1MDY4ODMsImV4cCI6MTczNDUxMDQ4M30.BYK_L0F5MrFMNBvrUrK1TIjU3QOWwHKix2ouiD0HqAg
+}
+
+body:multipart-form {
+  content: "This is a post!"
+  image: @file(D:\resume sri one page\73772026139.jpg)
+  userId: 67618e53393fca2386229e6b
+}

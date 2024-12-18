@@ -1,0 +1,20 @@
+meta {
+  name: Step 7 Accept Friend Request JOHN TO SRI REQUEST
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:3000/api/friends/accept
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzYxOGU1MzM5M2ZjYTIzODYyMjllNmIiLCJpYXQiOjE3MzQ1MTA2NDUsImV4cCI6MTczNDUxNDI0NX0.5PWICPy8OiKQRgFTx_oCegxaMrLtnY-13BChrFHf2gw
+  Content-Type: application/json
+}
+
+body:json {
+  {"friendshipId": "676287188895a0a2e020cb4c"}
+}

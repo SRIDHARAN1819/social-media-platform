@@ -1,0 +1,16 @@
+meta {
+  name: Step 8 Follow User (for Public and Private Accounts)
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:3000/api/friends/follow/67618edb393fca2386229e6e
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzYxOGU1MzM5M2ZjYTIzODYyMjllNmIiLCJpYXQiOjE3MzQ1MDYwMTgsImV4cCI6MTczNDUwOTYxOH0.EgFySEVuVMb59X02qG8IeBEr0EjzYDspY9P_N0RFzYQ
+  Content-Type: application/json
+}

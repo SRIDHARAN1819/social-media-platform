@@ -1,0 +1,20 @@
+meta {
+  name: Step 6  Send Friend Request (for Private Accounts) SRI TO JOHN
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:3000/api/friends/request
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzYxOGVkYjM5M2ZjYTIzODYyMjllNmUiLCJpYXQiOjE3MzQ1MTAzMzAsImV4cCI6MTczNDUxMzkzMH0.igAAKAZBGdkx1WUPKvNAcTdkVI04FzCc0zcmYoQEXxY
+  Content-Type: application/json
+}
+
+body:json {
+  {"recipientId": "67618e53393fca2386229e6b"}
+}

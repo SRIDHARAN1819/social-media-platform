@@ -1,0 +1,21 @@
+meta {
+  name: Step 1_User 2 __ User Registration - SRIDHARAN
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/auth/register
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  { "username": "SRIDHARAN S",
+   "email": "sridharan@gmail.com",
+   "password": "test2" }
+}
